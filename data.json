@@ -1,0 +1,21 @@
+{"person":[
+        {
+            "id" : "0",
+            "firstname": "John",
+            "lastname": "Doe",
+            "city" : "NY"
+        },
+        {
+            "id": "1",
+            "firstname": "Arnaud",
+            "lastname": "Cartailler",
+            "city": "Arras"
+        },
+        {
+            "id": "2",
+            "firstname": "Titi",
+            "lastname": "Grominet",
+            "city" : "Lille"
+        }
+
+]}

@@ -1,0 +1,21 @@
+{"person":[
+        {
+            "id" : 0,
+            "firstname": "John",
+            "lastname": "Doe",
+            "age" : 99
+        },
+        {
+            "id": 1,
+            "firstname": "Arnaud",
+            "lastname": "Cartailler",
+            "age" : 25
+        },
+        {
+            "id": 2,
+            "firstname": "Titi",
+            "lastname": "Grominet",
+            "age" : 5
+        }
+
+]}
