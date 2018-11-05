@@ -38,3 +38,23 @@ ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
         tr.appendChild(td3);
     });
 });
+
+
+function sw(){
+
+var value = document.getElementById("selection").value;
+    
+    if(value === "Alphabetic"){
+
+            // var x = a.firstname.toLowerCase();
+            // var y = b.firstname.toLowerCase();
+            // return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        
+        }else if(value === "Age"){
+
+            //  var x = a.age.toLowerCase();
+            //  var y = b.age.toLowerCase();
+            //  return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+
+        }
+    }
