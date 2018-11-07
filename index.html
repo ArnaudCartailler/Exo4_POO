@@ -25,23 +25,22 @@
 
 <body>
 
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Select</label>
-    <select class="form-control" id="selection" onchange="sw()">
-      <option>Alphabetic</option>
-      <option>Age</option>
-    </select>
-  </div>
-  
+   
+  <label for="select-key">Sort by</label>
+  <select id="selection">
+    <option value="name">Name</option>
+    <option value="age">Age</option>
+  </select>
 
-  <table id="addLine">
+   <table>
       <td>Firstname</td>
       <td>Lastname</td>
       <td>Age</td>
     </th>
-  </table>
+  </table> 
 
 
+<td id="addLine"></td>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

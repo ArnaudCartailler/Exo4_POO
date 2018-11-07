@@ -28,9 +28,9 @@ ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
         const td2 = document.createElement('td');
         const td3 = document.createElement('td');
 
-        td1.innerHTML = user.firstname
-        td2.innerHTML = user.lastname
-        td3.innerHTML = user.age
+        td1.innerHTML = user.firstname;
+        td2.innerHTML = user.lastname;
+        td3.innerHTML = user.age;
 
         addline.appendChild(tr);
         tr.appendChild(td1);
@@ -40,21 +40,21 @@ ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
 });
 
 
-function sw(){
+function change(){
 
 var value = document.getElementById("selection").value;
     
-    if(value === "Alphabetic"){
+    if(value === "name"){
 
-            // var x = a.firstname.toLowerCase();
-            // var y = b.firstname.toLowerCase();
-            // return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-        
-        }else if(value === "Age"){
+            this.person.sort(function (a, b) {
+            return a.firstname > b.firstname;
+            }    
 
-            //  var x = a.age.toLowerCase();
-            //  var y = b.age.toLowerCase();
-            //  return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        } else if(value === "age"){
 
+            this.person.sort(function (a, b) {
+             return a.age > b.age;
         }
     }
+}
+
