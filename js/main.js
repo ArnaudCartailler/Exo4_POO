@@ -40,7 +40,7 @@ ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
 });
 
 
-function change(){
+ajaxGet("http://localhost/exo4_poo/main.json", function change() {
 
 var value = document.getElementById("selection").value;
     
@@ -48,13 +48,13 @@ var value = document.getElementById("selection").value;
 
             this.person.sort(function (a, b) {
             return a.firstname > b.firstname;
-            }    
+            });
 
         } else if(value === "age"){
 
             this.person.sort(function (a, b) {
              return a.age > b.age;
-        }
+        });
     }
-}
+});
 
