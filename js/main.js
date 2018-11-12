@@ -37,7 +37,7 @@
 //         tr.appendChild(td2);
 //         tr.appendChild(td3);
 //     });
-    
+
 // });
 
 
@@ -45,7 +45,7 @@
 
 // function change(value) {
 
-    
+
 //     if(value === "name"){
 
 //             this.user.sort(function (a, b) {
@@ -67,7 +67,7 @@ var itemType;
 var HtmlManager = {
     data: "",
     getData: function () {
-        HtmlManager.ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
+        HtmlManager.ajaxGet("main.json", function (reponse) {
             HtmlManager.data = JSON.parse(reponse);
 
             HtmlManager.createDashboard();
@@ -91,9 +91,9 @@ var HtmlManager = {
     },
 
     //JSON request for managing HTML
-    
+
     sortJson: function () {
-        HtmlManager.ajaxGet("http://localhost/exo4_poo/main.json", function (reponse) {
+        HtmlManager.ajaxGet("main.json", function (reponse) {
 
             HtmlManager.data = JSON.parse(reponse);
 
@@ -133,7 +133,7 @@ var HtmlManager = {
         }
     },
 
-    //create and display person 
+    //create and display person
 
     createDashboard: function () {
         HtmlManager.data.person.forEach(user => {
