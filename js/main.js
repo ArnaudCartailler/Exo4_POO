@@ -64,6 +64,7 @@
 
 var itemType;
 
+
 var HtmlManager = {
     data: "",
     getData: function () {
@@ -73,6 +74,7 @@ var HtmlManager = {
             HtmlManager.createDashboard();
         });
     },
+ 
     ajaxGet: function (url, callback) {
         var req = new XMLHttpRequest();
         req.open("GET", url);
@@ -111,6 +113,10 @@ var HtmlManager = {
 
     //Allow sort by
 
+    /**
+     * 
+     * @param {string, number} itemType 
+     */
     checkSelect: function (itemType) {
         if (itemType == "firstname") {
             HtmlManager.data.person.sort(function (a, b) {
